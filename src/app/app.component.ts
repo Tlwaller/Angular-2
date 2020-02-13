@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learn-angular';
+  userInput = '';
+
+  handleInput(e) {
+    this.userInput = e.target.value;
+    console.log(this.userInput);
+  }
 }
