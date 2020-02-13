@@ -1,4 +1,4 @@
 <h1>{{ title }}</h1>
 
-<input (keyup)='handleInput($event)'/>
-<button></button>
+<input type='text' [(ngModel)]='userInput'/>
+<button (click)='buttonClick()'>Click to change text</button>
